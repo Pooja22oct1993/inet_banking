@@ -1,15 +1,16 @@
 package com.inetBankingProject.test_case;
-
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import com.inetBankingProject.page_object.HomePage;
 import com.inetBankingProject.page_object.LoginPage;
 import com.inetBankingProject.test_base.TestBase;
 
 public class LoginTC_01 extends TestBase{
 	LoginPage lp;
-	@Test
+	HomePage hp;
+	@Test(priority = 1)
 	public void TC_001() {
 	lp=new LoginPage(driver);
 	lp.EnteruserID("mngr448612");
@@ -25,12 +26,21 @@ public class LoginTC_01 extends TestBase{
 		
 	}
 		
+}
+	
+		
+		
+		
 		
 	}
+	
+	
+
+
 	
 	
 	
 	
 	
 
-}
+

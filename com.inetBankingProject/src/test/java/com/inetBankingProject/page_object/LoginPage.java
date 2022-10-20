@@ -1,5 +1,7 @@
 package com.inetBankingProject.page_object;
 
+import java.time.Duration;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -66,3 +68,8 @@ public class LoginPage {
 	
 
 }
+//driver.manage().timeouts().implicitlyWait(Duration.ofMillis(2000));
+//hp.closePopUp1();
+//driver.manage().timeouts().implicitlyWait(Duration.ofMillis(2000));
+//hp.closePopUp2();
+//hp.createNewCustomer();

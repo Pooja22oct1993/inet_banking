@@ -16,7 +16,7 @@ public class TestBase {
 
 	@BeforeTest
 	@Parameters({ "brname", "appurl" })
-	public void setUp(@Optional("chrome") String browser, @Optional("https://demo.guru99.com/V4/") String url) {
+	public void setUp(@Optional("firefox") String browser, @Optional("https://demo.guru99.com/V4/") String url) {
 
 		if (browser.equals("chrome")) {
 
@@ -36,7 +36,8 @@ public class TestBase {
 	@AfterTest
 
 	public void endTheBrowser() {
-		driver.quit();
+		
 	}
 
 }
+//input[@type='date']
